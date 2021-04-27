@@ -1,18 +1,18 @@
 package com.javatodev.finance.exception;
 
 public class BankingCoreGlobalException extends RuntimeException {
-    private Long code;
+    private String code;
 
-    public BankingCoreGlobalException(String message, Long code){
+    public BankingCoreGlobalException(String message, String code){
         super(message);
         this.code = code;
     }
 
-    public Long getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(Long code) {
+    public void setCode(String code) {
         this.code = code;
     }
 }
