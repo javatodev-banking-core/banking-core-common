@@ -1,4 +1,4 @@
-package com.javatodev.finance;
+package com.javatodev.finance.mapper;
 
 import java.util.Collection;
 import java.util.List;
