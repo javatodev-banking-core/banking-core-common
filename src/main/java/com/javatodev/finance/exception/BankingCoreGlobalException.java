@@ -3,6 +3,13 @@ package com.javatodev.finance.exception;
 public class BankingCoreGlobalException extends RuntimeException {
     private String code;
 
+    public BankingCoreGlobalException() {
+    }
+
+    public BankingCoreGlobalException(String code) {
+        this.code = code;
+    }
+
     public BankingCoreGlobalException(String message, String code){
         super(message);
         this.code = code;
