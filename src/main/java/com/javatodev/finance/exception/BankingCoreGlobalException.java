@@ -2,6 +2,7 @@ package com.javatodev.finance.exception;
 
 public class BankingCoreGlobalException extends RuntimeException {
     private String code;
+    private String message;
 
     public BankingCoreGlobalException() {
     }
@@ -10,9 +11,10 @@ public class BankingCoreGlobalException extends RuntimeException {
         this.code = code;
     }
 
-    public BankingCoreGlobalException(String message, String code){
+    public BankingCoreGlobalException(String message, String code) {
         super(message);
         this.code = code;
+        this.message = message;
     }
 
     public String getCode() {
@@ -21,5 +23,13 @@ public class BankingCoreGlobalException extends RuntimeException {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
