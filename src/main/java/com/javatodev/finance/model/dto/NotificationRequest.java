@@ -1,6 +1,8 @@
 package com.javatodev.finance.model.dto;
 
-public class NotificationRequest {
+import java.io.Serializable;
+
+public class NotificationRequest implements Serializable {
     private String message;
     private MessageType type;
 
